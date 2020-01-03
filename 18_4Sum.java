@@ -1,5 +1,5 @@
 class Solution{
-	public List<List<List<Integer>> fourSum(int[] nums, int target){
+	public List<List<Integer>> fourSum(int[] nums, int target){
 		HashSet<List<Integer>> set = new HashSet<>();
 		Arrays.sort(nums);
 		for(int i = 0; i < nums.length - 3; i++){
