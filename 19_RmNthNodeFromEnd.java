@@ -9,7 +9,7 @@ public ListNode removeNthFromEnd(ListNode head, int n){
 	}
 
 	length -= n;
-	first = dummyl
+	first = dummy;
 	while (length > 0){
 		length--;
 		first = first.next;
