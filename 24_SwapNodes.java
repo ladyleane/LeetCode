@@ -24,5 +24,6 @@ class Solution{
 			end.next = start;
 			temp = start;
 		}
+		return pre.next;
 	}
 }
