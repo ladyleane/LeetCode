@@ -1,5 +1,5 @@
 class Solution{
-	public int firstMissingPositive(int[] nums{
+	public int firstMissingPositive(int[] nums){
 		int n = nums.length;
 
 		int contains = 0;
