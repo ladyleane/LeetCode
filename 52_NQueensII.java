@@ -1,6 +1,6 @@
 class Solution{
 	public boolean isNotUnderAttack(int row, int col, int n, int [] rows, int [] hills, int [] dales){
-		int res = rows[col] + hill[row - col + 2 * n] + dales[row + col];
+		int res = rows[col] + hills[row - col + 2 * n] + dales[row + col];
 		return (res == 0) ? true : false;
 	}
 
@@ -8,7 +8,7 @@ class Solution{
 		for (int col = 0; col < n; col++){
 			if (isNotUnderAttack(row, col, n, rows, hills, dales)){
 				//Place queen
-				row[col] = 1;
+				rows[col] = 1;
 				hills[row - col + 2 * n] = 1;
 				dales[row + col] = 1;
 
