@@ -25,8 +25,8 @@ class Solution{
 					int averageBlank = sub / (row.size() - 1);
 					int missing = sub - averageBlank * (row.size() - 1);
 					String blank = getStringBlank(averageBlank + 1);
-					int k =1;
-					for (int j = 1; j < missing; j++){
+					int k = 1;
+					for (int j = 0; j < missing; j++){
 						temp.append(blank + row.get(k));
 						k++;
 					}
