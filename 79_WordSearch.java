@@ -1,6 +1,6 @@
 public class Solution{
 	private boolean[][] marked;
-	private int[][] direction = {{-1, 0}, {0， -1}, (0, 1}, {1, 0});
+	private int[][] direction = {{-1, 0}, {0, -1}, {0, 1}, {1, 0}};
 	private int m, n;
 
 	private String word;
@@ -31,7 +31,7 @@ public class Solution{
 			return board[i][j] == word.charAt(start);
 		}
 		if (board[i][j] == word.charAt(start)){
-			marked[i][j] == true;
+			marked[i][j] = true;
 			for (int k = 0; k < 4; k++){
 				int newX = i + direction[k][0];
 				int newY = j + direction[k][1];
