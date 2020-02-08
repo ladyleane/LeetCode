@@ -7,7 +7,7 @@ class Solution{
 		ListNode dummy = new ListNode(-1);
 		dummy.next = head;
 		ListNode latter = dummy;
-		ListN0de pre = head;
+		ListNode pre = head;
 
 		while (pre != null){
 			if (pre.next != null && pre.val == pre.next.val){
