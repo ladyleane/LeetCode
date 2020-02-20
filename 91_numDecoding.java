@@ -17,7 +17,6 @@ public int numDecodings(String s) {
             }
             if ((s.charAt(i) - '0') * 10 + (s.charAt(i + 1) - '0') <= 26) {
                 res += help;
-                //help用来存储res以前的值
                 help = res - help;
             } else {
                 help = res;
